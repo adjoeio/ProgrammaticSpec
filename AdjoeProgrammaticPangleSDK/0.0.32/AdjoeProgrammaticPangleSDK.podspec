@@ -14,6 +14,6 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = 'AdjoeProgrammaticPangleSDK.xcframework'
 
   spec.dependency 'AdjoeProgrammaticSDK', "#{spec.version}"
-  spec.dependency 'Ads-Global', '4.9.0.9'
+  spec.dependency 'Ads-Global', '4.8.1.0'
 
 end
