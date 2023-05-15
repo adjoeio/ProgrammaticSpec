@@ -13,10 +13,10 @@ Pod::Spec.new do |spec|
   spec.ios.preserve_paths = 'AdjoeWavePangleSDK.xcframework'
   spec.ios.vendored_frameworks = 'AdjoeWavePangleSDK.xcframework'
 
-  spec.dependency 'AdjoeWaveSDK', "#{spec.version}"
-  spec.dependency 'Ads-Global', '4.8.1.0'
-
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+  spec.dependency 'AdjoeWaveSDK', "#{spec.version}"
+  spec.dependency 'Ads-Global', '4.8.1.0'
 
 end
